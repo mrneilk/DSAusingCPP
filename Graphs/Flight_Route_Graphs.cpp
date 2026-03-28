@@ -44,10 +44,10 @@ int main() {
     airportSystem.addFlight("New York", "London", 800);
     airportSystem.addFlight("New York", "Paris", 750);
     airportSystem.addFlight("London", "Tokyo", 1200);
-    airportSystem.addFlight("Tokyo", "New York", 1100);
+    airportSystem.addFlight("Tokyo", "New York", 100);
     airportSystem.addFlight("Paris", "London", 200);
 
     airportSystem.displayRoutes();
-
+    airportSystem.findDirectFlights("London");
     return 0;
 }
