@@ -87,10 +87,12 @@ int main() {
 
     // Read
     cout << "Key 10: " << tree.read(10) << endl;
+    cout << "Key 20: " << tree.read(20) << endl;
 
     // Update
     tree.update(10, "Updated_Record_A");
     cout << "Key 10 (after update): " << tree.read(10) << endl;
+    cout << "Key 20: "<< tree.read(20) << endl;
 
     return 0;
 }
