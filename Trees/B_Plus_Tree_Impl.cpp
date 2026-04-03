@@ -12,7 +12,7 @@ struct Node {
     vector<string> values;  // For leaf nodes (simulating data)
     Node* next;             // For leaf node linking
 
-    Node(bool leaf) : isLeaf(leaf), next(nullptr) {}
+    Node(bool leaf) : isLeaf(leaf), next(nullptr) {}   
 };
 
 class BPlusTree {
