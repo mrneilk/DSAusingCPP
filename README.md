@@ -9,3 +9,8 @@ Graphs consist of nodes (vertices) connected by edges, representing complex rela
 
 ## In Memory View
 When a C++ program runs, memory is divided into the Stack (for local variables and function calls) and the Heap (for dynamic memory allocated via new). Understanding this "view" is crucial for DSA to prevent memory leaks and manage pointers effectively. Arrays are typically stored in a single block, while graph nodes in an adjacency list may be scattered across the heap.
+
+## Bloom Filters
+
+## Other Programs
+
