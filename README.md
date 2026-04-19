@@ -52,6 +52,8 @@ A deep look into the "Where" and "How" of data storage:
 ### Prerequisites
 * A C++17 compatible compiler (GCC/Clang/MSVC)
 * Make or CMake (Optional for automated builds)
+* VSCode
+* Git
 
 ### Build & Execute
 ```bash
