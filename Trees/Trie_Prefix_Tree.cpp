@@ -58,3 +58,31 @@ public:
         return true;
     }
 };
+
+int main() {
+    Trie* myTrie = new Trie();
+
+    // 1. Insert words
+    std::vector<std::string> words = {"apple", "apply", "bat", "ball"};
+    for (const std::string& w : words) {
+        myTrie->insert(w);
+        std::cout << "Inserted: " << w << std::endl;
+    }
+
+    std::cout << "\n--- Search Results ---\n";
+
+    // 2. Full word search
+    std::cout << "Search 'apple': " << (myTrie->search("apple") ? "Found" : "Not Found") << std::endl;
+    std::cout << "Search 'app': " << (myTrie->search("app") ? "Found" : "Not Found") << std::endl;
+    std::cout << "Search 'bat': " << (myTrie->search("bat") ? "Found" : "Not Found") << std::endl;
+
+    std::cout << "\n--- Prefix Results ---\n";
+
+    // 3. Prefix search
+    std::cout << "Starts with 'app': " << (myTrie->startsWith("app") ? "Yes" : "No") << std::endl;
+    std::cout << "Starts with 'ba': " << (myTrie->startsWith("ba") ? "Yes" : "No") << std::endl;
+    std::cout << "Starts with 'cat': " << (myTrie->startsWith("cat") ? "Yes" : "No") << std::endl;
+
+    delete myTrie;
+    return 0;
+}
