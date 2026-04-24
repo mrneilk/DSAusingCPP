@@ -2,6 +2,9 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
+#include <cstdint> // For int8_t - explaination: This header is included to use the int8_t type, which is a fixed-width integer type that is exactly 8 bits wide. 
+//It is part of the C++ standard library and is defined in the <cstdint> header. 
+// Using int8_t allows us to represent values in the range of -128 to 127, which is suitable for our quantization process where we want to compress floating-point values into a smaller integer format.
 
 // Simple 8-bit Symmetric Quantizer
 class Quantizer {
