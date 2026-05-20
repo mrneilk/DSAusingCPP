@@ -4,7 +4,6 @@ A specialized laboratory for Data Structures and Algorithms, focusing on low-lev
 
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Data Structures](https://img.shields.io/badge/Logic-Data_Structures-orange?style=for-the-badge)
-![Linux](https://img.shields.io/badge/OS-Linux-f0b041?style=for-the-badge&logo=linux&logoColor=black)
 
 ---
 
