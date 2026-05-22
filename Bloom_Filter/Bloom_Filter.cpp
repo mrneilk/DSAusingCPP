@@ -5,6 +5,7 @@
 
 // Use Case: Google Chrome uses this to check if a URL is a known malicious site without storing the entire list of millions of dangerous URLs on your computer.
 
+//check if relates to hashing
 
 #include <iostream>
 #include <vector>
