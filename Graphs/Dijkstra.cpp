@@ -67,8 +67,10 @@ public:
 
 int main() {
     int V = 5;
+    // graph nodes added
     Graph g(V);
-
+    // what is happening here?
+    // initializing graph
     g.addEdge(0, 1, 9);
     g.addEdge(0, 2, 6);
     g.addEdge(1, 2, 2);
