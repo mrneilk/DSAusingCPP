@@ -79,7 +79,7 @@ public:
     }
 
     // Returns the current size of the heap
-    size_back_t size() const {
+    size_t size() const {
         return heap.size();
     }
 
