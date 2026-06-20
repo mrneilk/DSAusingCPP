@@ -43,7 +43,7 @@ A deep look into the "Where" and "How" of data storage:
 | **Trees** | 🏗️ In Progress  | BST, AVL, Red-Black Tree, Heaps |
 | **In-Memory** | ✅ Complete | RAII, Smart Pointers, Stack Frames |
 | **Bloom Filters**| 🧪 Experimental | MurmurHash, Bitsets, Error-Rates |
-| **List**| 🏗️ In Progress | Linked List, Circular |
+| **List**| ✅ Complete  | Linked List, Circular |
 
 ---
 
