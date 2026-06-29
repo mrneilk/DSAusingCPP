@@ -63,7 +63,7 @@ void KMPSearch(const std::string& text, const std::string& pattern) {
 
 int main() {
     std::string text = "ABABDABACDABABCABAB";
-    std::string pattern = "ABAB";
+    std::string pattern = "ABABC";
     
     std::cout << "Text:    " << text << "\n";
     std::cout << "Pattern: " << pattern << "\n\n";
