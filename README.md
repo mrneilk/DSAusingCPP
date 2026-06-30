@@ -39,10 +39,10 @@ A deep look into the "Where" and "How" of data storage:
 | Module | Implementation Status | Key Concepts |
 | :--- | :---: | :--- |
 | **Arrays** | ✅ Complete | Sliding Window, Two-Pointer, Kadane’s |
-| **Graphs** | 🏗️ In Progress | Dijkstra, Prim's, BFS/DFS Traversal |
-| **Trees** | 🏗️ In Progress  | BST, AVL, Red-Black Tree, Heaps |
+| **Graphs** | ✅ Complete | Dijkstra, Prim's, BFS/DFS Traversal |
+| **Trees** | ✅ Complete | BST, AVL, Red-Black Tree, Heaps |
 | **In-Memory** | ✅ Complete | RAII, Smart Pointers, Stack Frames |
-| **Bloom Filters**| 🧪 Experimental | MurmurHash, Bitsets, Error-Rates |
+| **Bloom Filters**| ✅ Complete | MurmurHash, Bitsets, Error-Rates |
 | **List**| ✅ Complete  | Linked List, Circular |
 
 ---
