@@ -1,6 +1,6 @@
 # 🚀 DSA Odyssey: Core Architectures in C++
 
-A specialized laboratory for Data Structures and Algorithms, focusing on low-level memory management, efficient system design, and high-performance computing logic.
+A personalized laboratory for Data Structures and Algorithms, focusing on low-level memory management, efficient system design, and high-performance computing logic.
 
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Data Structures](https://img.shields.io/badge/Logic-Data_Structures-orange?style=for-the-badge)
