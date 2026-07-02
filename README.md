@@ -32,6 +32,8 @@ A deep look into the "Where" and "How" of data storage:
 * **Hashing Logic:** Implementing multiple hash functions to tune the false-positive rate.
 * **Use Cases:** System-level cache filtering and database query optimization.
 
+### Lists
+
 ---
 
 ## 🛠️ Repository Roadmap
