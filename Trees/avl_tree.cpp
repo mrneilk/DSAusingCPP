@@ -136,6 +136,8 @@ int main() {
     cout << "Inorder traversal of the constructed AVL tree is: \n";
     inorder(root);
     cout << endl;
+    cout << "Height of the tree is: " << getHeight(root) << endl; // Display the height of the root node
+    cout << endl;
 
     return 0;
 }
