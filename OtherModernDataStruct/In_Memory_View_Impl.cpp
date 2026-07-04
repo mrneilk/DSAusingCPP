@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+// error: 'span' is not a member of 'std'; did you mean 'std::span'?
 #include <span>
 #include <algorithm>
 
