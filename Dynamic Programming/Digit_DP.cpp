@@ -50,7 +50,7 @@ long long getCount(long long n, int target) {
 }
 
 int main() {
-    long long L = 10, R = 200;
+    long long L = 10, R = 500;
     int target = 5;
 
     // Standard prefix trick: Count(R) - Count(L-1)
