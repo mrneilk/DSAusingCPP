@@ -1,1 +1,47 @@
 Types of Sorting
+
+In computing, sorting means arranging a collection of data (like numbers or words) into a specific order—usually ascending ($1, 2, 3...$) or descending ($3, 2, 1...$).
+
+Because computers spend a massive amount of time organizing data, choosing the right sorting algorithm can make the difference between a program running in milliseconds or grinding to a halt.
+
+---
+
+## The Big Three Categories
+
+Sorting techniques generally fall into three main buckets based on how they operate:
+
+### 1. Simple but Slow ($O(n^2)$)
+
+These are intuitive to write but get incredibly slow as you add more data. If you double the data, they take four times longer to finish.
+
+* **Bubble Sort:** Steps through the list, compares adjacent elements, and swaps them if they're in the wrong order. The largest elements "bubble" to the top.
+* **Insertion Sort:** Builds the final sorted list one item at a time, much like how you might sort a hand of playing cards. Great for small datasets or lists that are already mostly sorted.
+* **Selection Sort:** Divides the list into a sorted and unsorted section. It repeatedly finds the smallest element from the unsorted section and swaps it into the sorted section.
+
+### 2. Fast and Efficient ($O(n \log n)$)
+
+These use a "divide and conquer" strategy. They split the massive list into smaller chunks, sort those, and stitch them back together.
+
+* **Merge Sort:** Splits the list in half recursively until it has single elements, then merges those small lists back together in sorted order. Highly predictable and stable (keeps identical elements in their original relative order).
+* **Quick Sort:** Picks a "pivot" element and partitions the rest of the data into two groups: those smaller than the pivot and those larger. It then recursively sorts the sub-lists. It is often faster in practice than Merge Sort, though a bad pivot choice can slow it down.
+* **Heap Sort:** Visualizes the data as a binary tree (a "heap"). It repeatedly pulls the largest element from the tree and rebuilds the tree until everything is sorted.
+
+### 3. Non-Comparison Based ($O(n)$)
+
+Most sorting algorithms work by comparing two elements ($A > B$). However, if you know specific constraints about your data ahead of time (e.g., "all items are integers between 1 and 100"), you can sort without comparing.
+
+* **Counting Sort:** Counts the occurrences of each unique value, then uses arithmetic to map them directly to their final positions.
+* **Radix Sort:** Sorts the data digit by digit, starting from the least significant digit (ones place) to the most significant digit (tens, hundreds, etc.).
+
+---
+
+## How They Compare
+
+| Algorithm | Best-Case Time | Average Time | Worst-Case Time | Space Required |
+| --- | --- | --- | --- | --- |
+| **Bubble Sort** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ (In-place) |
+| **Insertion Sort** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ (In-place) |
+| **Merge Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ (Needs extra memory) |
+| **Quick Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ |
+
+> **What does $O(n)$ mean?** Big-O notation measures how an algorithm's runtime or memory requirements scale up as the input size ($n$) grows.
