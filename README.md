@@ -46,6 +46,7 @@ A deep look into the "Where" and "How" of data storage:
 | **In-Memory** | ✅ Complete | RAII, Smart Pointers, Stack Frames |
 | **Bloom Filters**| ✅ Complete | MurmurHash, Bitsets, Error-Rates |
 | **List**| ✅ Complete  | Linked List, Circular |
+| **Sorting and Searching**| In Progress  | Search and Sort Algorithms |
 
 ---
 
