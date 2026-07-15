@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 
+// The template function allows the insertion sort to work with any data type that supports comparison operators.
 template <typename T>   // Function to perform insertion sort on a vector of type T
 void insertionSort(std::vector<T>& arr) {
     const size_t n = arr.size();
@@ -9,7 +10,7 @@ void insertionSort(std::vector<T>& arr) {
     for (size_t i = 1; i < n; ++i) {
         T key = arr[i];
         // Move elements of arr[0..i-1] that are greater than key
-        int j = static_cast<int>(i) - 1;
+        int j = static_cast<int>(i) - 1;    // Static Cast to int to avoid unsigned underflow
 
         // Move elements of arr[0..i-1] that are greater than the key
         // to one position ahead of their current position
