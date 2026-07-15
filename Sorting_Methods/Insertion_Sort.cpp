@@ -1,13 +1,14 @@
 #include <vector>
 #include <iostream>
 
-template <typename T>
+template <typename T>   // Function to perform insertion sort on a vector of type T
 void insertionSort(std::vector<T>& arr) {
     const size_t n = arr.size();
     if (n <= 1) return;
 
     for (size_t i = 1; i < n; ++i) {
         T key = arr[i];
+        // Move elements of arr[0..i-1] that are greater than key
         int j = static_cast<int>(i) - 1;
 
         // Move elements of arr[0..i-1] that are greater than the key
@@ -17,6 +18,10 @@ void insertionSort(std::vector<T>& arr) {
             --j;
         }
         arr[j + 1] = key;
+        // Print the array after each insertion
+        for (int val : data) {
+        std::cout << val << " ";
+    }
     }
 }
 
@@ -25,9 +30,9 @@ int main() {
     
     insertionSort(data);
 
-    for (int val : data) {
-        std::cout << val << " ";
-    }
+    // for (int val : data) {
+    //     std::cout << val << " ";
+    // }
     std::cout << "\n"; // Output: 5 6 11 12 13
     return 0;
 }
