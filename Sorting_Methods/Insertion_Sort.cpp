@@ -19,15 +19,20 @@ void insertionSort(std::vector<T>& arr) {
         }
         arr[j + 1] = key;
         // Print the array after each insertion
-        for (int val : data) {
-        std::cout << val << " ";
-    }
+        for (int val : arr) {
+            std::cout << val << " ";
+        }
+        std::cout << "\n";
     }
 }
 
 int main() {
     std::vector<int> data = {12, 11, 13, 5, 6};
-    
+    for (int val : data) {
+        std::cout << val << " ";
+    }
+    std::cout << "\n";
+
     insertionSort(data);
 
     // for (int val : data) {
