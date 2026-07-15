@@ -29,6 +29,7 @@ void insertionSort(std::vector<T>& arr) {
 
 int main() {
     std::vector<int> data = {12, 11, 13, 5, 6};
+    // Print the original array
     for (int val : data) {
         std::cout << val << " ";
     }
