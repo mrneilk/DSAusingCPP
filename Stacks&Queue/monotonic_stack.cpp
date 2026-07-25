@@ -20,3 +20,16 @@ std::vector<int> nextGreaterElement(const std::vector<int>& nums) {
     }
     return result;
 }
+
+int main() {
+    std::vector<int> nums = {4, 5, 2, 10, 8};
+    std::vector<int> result = nextGreaterElement(nums);
+
+    std::cout << "Next Greater Elements: ";
+    for (int val : result) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
