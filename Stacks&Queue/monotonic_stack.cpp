@@ -20,7 +20,7 @@ std::vector<int> nextGreaterElement(const std::vector<int>& nums) {
     }
     return result;
 }
-
+// main created seperatly
 int main() {
     std::vector<int> nums = {4, 5, 2, 10, 8};
     std::vector<int> result = nextGreaterElement(nums);
