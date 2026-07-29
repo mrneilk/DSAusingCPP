@@ -1,4 +1,4 @@
-
+// Menu driven stack program
 #include <iostream>
 
 #define MAX 5 // Maximum size of the stack
