@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <stdexcept> // For throwing errors
+
 // Segment Tree implementation for range sum queries
 class SegmentTree {
     std::vector<int> tree;
