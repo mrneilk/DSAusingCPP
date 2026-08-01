@@ -48,6 +48,7 @@ A deep look into the "Where" and "How" of data storage:
 | **List**| ✅ Complete  | Linked List, Circular |
 | **Sorting and Searching**| In Progress  | Search and Sort Algorithms |
 | **Stacks and Queue**| In Progress  | Stack, Queues and variations |
+| **Back Tracking**| In Progress  | Sudoku Solver |
 
 ---
 
