@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Define the size of the Sudoku grid - Globally defined as 9 for a standard Sudoku puzzle
 #define N 9
 
 // Function to print the Sudoku grid nicely
