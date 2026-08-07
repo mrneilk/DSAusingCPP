@@ -1,6 +1,6 @@
 // Knapsack Problem
 
-//where is the main?
+//main function updated
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -23,4 +23,17 @@ int knapsack01(int W, const std::vector<int>& weights, const std::vector<int>& v
     }
 
     return dp[n][W];
+}
+int main() {
+    // Sample test case
+    std::vector<int> values = {60, 100, 120};
+    std::vector<int> weights = {10, 20, 30};
+    int W = 50; // Knapsack capacity
+    int n = values.size();
+
+    int maxValue = knapsack01(W, weights, values, n);
+
+    std::cout << "Maximum value in Knapsack = " << maxValue << std::endl;
+
+    return 0;
 }
