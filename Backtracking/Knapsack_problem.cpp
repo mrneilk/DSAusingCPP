@@ -1,6 +1,6 @@
 // Knapsack Problem
 
-//main function updated 8 AUg 2026
+//main function updated 8 Aug 2026
 #include <iostream>
 #include <vector>
 #include <algorithm>
