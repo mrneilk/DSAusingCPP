@@ -1,4 +1,4 @@
-
+//quick sort Method
 #include <iostream>
 #include <vector>
 #include <algorithm>
