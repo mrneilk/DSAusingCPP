@@ -17,3 +17,14 @@ void selectionSort(std::vector<int>& arr) {
         }
     }
 }
+// main function to test the selection sort implementation
+int main() {
+    std::vector<int> arr = {64, 25, 12, 22, 11};
+    selectionSort(arr);
+    std::cout << "Sorted array: ";
+    for (const auto& num : arr) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
