@@ -1,4 +1,4 @@
-// add main function --
+// add main function
 #include <vector>
 #include <iostream>
 
