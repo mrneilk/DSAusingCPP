@@ -1,4 +1,5 @@
 // add main function
+// main updated on 20 aug
 #include <vector>
 #include <iostream>
 
@@ -31,4 +32,24 @@ void mergeSort(std::vector<int>& arr, int left, int right) {
     mergeSort(arr, left, mid);
     mergeSort(arr, mid + 1, right);
     merge(arr, left, mid, right);
+}
+
+int main() {
+    std::vector<int> arr = {38, 27, 43, 3, 9, 82, 10};
+
+    std::cout << "Original array: ";
+    for (int num : arr) {
+        std::cout << num << " ";
+    }
+    std::cout << "\n";
+
+    mergeSort(arr, 0, arr.size() - 1);
+
+    std::cout << "Sorted array:   ";
+    for (int num : arr) {
+        std::cout << num << " ";
+    }
+    std::cout << "\n";
+
+    return 0;
 }
