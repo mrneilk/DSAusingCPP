@@ -3,6 +3,7 @@
 
 #define MAX 5 // Maximum size of the stack
 
+//class implementation and object creation
 class Stack {
     int top;
     int arr[MAX];
