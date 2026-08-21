@@ -47,7 +47,7 @@ public:
         return it->second;
     }
 };
-
+//main
 int main() {
     ConsistentHashRing myCluster(3); // 3 virtual nodes per server
 
