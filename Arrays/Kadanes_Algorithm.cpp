@@ -1,4 +1,4 @@
-// Full Implementation of Kadane Algorithm
+// Full Implementation of Kadane's Algorithm
 #include <iostream>
 #include <vector>
 #include <algorithm>
