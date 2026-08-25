@@ -1,0 +1,121 @@
+C++ is the industry-standard language for algorithmic programming due to its high execution speed, fine-grained memory management, and powerful **Standard Template Library (STL)**.
+
+Below are core categories of algorithms implemented in modern C++.
+
+---
+
+### 1. Searching Algorithms
+
+**Binary Search (Iterative)**
+
+* **Time Complexity:** $\mathcal{O}(\log N)$
+* **Space Complexity:** $\mathcal{O}(1)$
+* **Prerequisite:** Input array must be sorted.
+
+```cpp
+#include <iostream>
+#include <vector>
+
+int binarySearch(const std::vector<int>& arr, int target) {
+    int left = 0;
+    int right = arr.size() - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2; // Prevents overflow compared to (left + right) / 2
+
+        if (arr[mid] == target) return mid;      // Target found
+        if (arr[mid] < target)  left = mid + 1;  // Search right half
+        else                    right = mid - 1; // Search left half
+    }
+    return -1; // Target not found
+}
+
+```
+
+---
+
+### 2. Sorting Algorithms
+
+**QuickSort (In-place & Recursive)**
+
+* **Time Complexity:** $\mathcal{O}(N \log N)$ average, $\mathcal{O}(N^2)$ worst-case
+* **Space Complexity:** $\mathcal{O}(\log N)$ auxiliary stack space
+
+```cpp
+#include <vector>
+#include <algorithm>
+
+int partition(std::vector<int>& arr, int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+
+    for (int j = low; j < high; ++j) {
+        if (arr[j] < pivot) {
+            ++i;
+            std::swap(arr[i], arr[j]);
+        }
+    }
+    std::swap(arr[i + 1], arr[high]);
+    return i + 1;
+}
+
+void quickSort(std::vector<int>& arr, int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+```
+
+---
+
+### 3. Graph Algorithms
+
+**Breadth-First Search (BFS)**
+
+* **Time Complexity:** $\mathcal{O}(V + E)$ where $V$ is vertices and $E$ is edges.
+* **Space Complexity:** $\mathcal{O}(V)$ for queue and visited vector.
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <queue>
+
+void bfs(int startNode, const std::vector<std::vector<int>>& adj) {
+    std::vector<bool> visited(adj.size(), false);
+    std::queue<int> q;
+
+    visited[startNode] = true;
+    q.push(startNode);
+
+    while (!q.empty()) {
+        int curr = q.front();
+        q.pop();
+        std::cout << curr << " ";
+
+        for (int neighbor : adj[curr]) {
+            if (!visited[neighbor]) {
+                visited[neighbor] = true;
+                q.push(neighbor);
+            }
+        }
+    }
+}
+
+```
+
+---
+
+### 4. C++ STL Built-in Algorithms `<algorithm>`
+
+In production and competitive coding, standard library algorithms are preferred over writing custom implementations:
+
+| Algorithm | Modern C++ Syntax | Time Complexity |
+| --- | --- | --- |
+| **Sort** | `std::sort(arr.begin(), arr.end());` | $\mathcal{O}(N \log N)$ (IntroSort) |
+| **Binary Search** | `bool found = std::binary_search(arr.begin(), arr.end(), val);` | $\mathcal{O}(\log N)$ |
+| **Lower Bound** | `auto it = std::lower_bound(arr.begin(), arr.end(), val);` | $\mathcal{O}(\log N)$ |
+| **Reverse** | `std::reverse(arr.begin(), arr.end());` | $\mathcal{O}(N)$ |
+| **Custom Lambda Sort** | `std::sort(v.begin(), v.end(), [](int a, int b){ return a > b; });` | $\mathcal{O}(N \log N)$ |
