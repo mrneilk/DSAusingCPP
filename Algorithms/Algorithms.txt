@@ -1,5 +1,6 @@
 C++ is the industry-standard language for algorithmic programming due to its high execution speed, fine-grained memory management, and powerful **Standard Template Library (STL)**.
 
+
 Below are core categories of algorithms implemented in modern C++.
 
 ---
