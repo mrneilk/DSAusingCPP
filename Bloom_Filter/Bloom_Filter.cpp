@@ -1,10 +1,7 @@
 // Bloom Filters
 // A Bloom filter tells you if an element is definitely not in a set or possibly in a set. It never gives a "false negative," but it might give a "false positive."
-
 // How it works: It uses a bit array and multiple hash functions. When you add an item, you hash it several times and set those bits to 1.
-
 // Use Case: Google Chrome uses this to check if a URL is a known malicious site without storing the entire list of millions of dangerous URLs on your computer.
-
 //check if relates to hashing
 
 #include <iostream>
