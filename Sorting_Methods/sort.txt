@@ -1,4 +1,4 @@
-Types of Sorting
+Sorting
 
 In computing, sorting means arranging a collection of data (like numbers or words) into a specific order—usually ascending ($1, 2, 3...$) or descending ($3, 2, 1...$).
 
